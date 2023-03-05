@@ -9,6 +9,9 @@ let
   csb = stdenv.mkDerivation {
     name = "csb";
     buildInputs = [
+      # ここでインストールしても拡張機能からは認識されない.
+      # shellcheck を Bash IDE から利用する場合は手動インストール後に reload が必要.
+      # shellcheck
       personal.fakePodmanDocker
     ];
   };
