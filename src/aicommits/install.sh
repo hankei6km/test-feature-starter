@@ -19,3 +19,4 @@ fi
 
 echo "Installing npm package: ${AICOMMITS_PACKAGE}@${AICOMMITS_VERSION}"
 npm install -g --omit=dev "${AICOMMITS_PACKAGE}@${AICOMMITS_VERSION}"
+npm cache clean --force
