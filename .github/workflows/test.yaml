@@ -13,6 +13,7 @@ jobs:
     strategy:
       matrix:
         features:
+          # aicommits is skipped. It require node.js.
           - color
           - hello
         baseImage:
@@ -34,6 +35,7 @@ jobs:
     strategy:
       matrix:
         features:
+          - aicommits
           - color
           - hello
     steps:
