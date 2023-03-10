@@ -1,7 +1,7 @@
 {
   "name": "aicommits (via npm)",
   "id": "aicommits",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Install the aicommits package via NPM registry",
   "options": {
     "version": {
