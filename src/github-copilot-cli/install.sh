@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-TARGET_PACKAGE="a@githubnext/github-copilot-cli"
+TARGET_PACKAGE="@githubnext/github-copilot-cli"
 TARGET_VERSION=${VERSION:-"latest"}
 
 set -e
