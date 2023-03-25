@@ -13,7 +13,7 @@ jobs:
     strategy:
       matrix:
         features:
-          # aicommits is skipped. It require node.js.
+          # aicommits/github-copilot-cli are skipped. It require node.js.
           - color
           - hello
         baseImage:
@@ -36,6 +36,7 @@ jobs:
       matrix:
         features:
           - aicommits
+          - github-copilot-cli
           - color
           - hello
     steps:
