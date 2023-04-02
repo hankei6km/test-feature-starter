@@ -16,6 +16,7 @@ Install the @githubnext/github-copilot-cli package via NPM registry
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
 | version | Select or enter a @githubnext/github-copilot-cli version. | string | latest |
+| helper | Install `helper-gh-copilot-cli.sh`. | boolean | false |
 
 
 
