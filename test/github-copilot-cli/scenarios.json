@@ -14,5 +14,22 @@
       }
     },
     "remoteUser": "node"
+  },
+  "helper": {
+    "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+    "features": {
+      "ghcr.io/devcontainers/features/common-utils:1": {
+        "installZsh": false,
+        "installOhMyZsh": false,
+        "upgradePackages": false,
+        "username": "node"
+      },
+      "ghcr.io/devcontainers/features/node:1": {},
+      "github-copilot-cli": {
+        "version": "0.1.29",
+        "helper": true
+      }
+    },
+    "remoteUser": "node"
   }
 }
