@@ -12,7 +12,7 @@
     },
     "helper": {
       "type": "boolean",
-      "default": "false",
+      "default": false,
       "description": "Install `helper-gh-copilot-cli.sh`."
     }
   },
