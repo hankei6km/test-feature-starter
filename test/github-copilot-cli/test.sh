@@ -13,6 +13,7 @@ source dev-container-features-test-lib
 # The 'check' command comes from the dev-container-features-test-lib.
 
 check "Check @githubnext/github-copilot-cli is installed" github-copilot-cli --version
+check "Check helper(helper-gh-copilot-cli.sh) is not installed" test ! -f /usr/local/bin/helper-gh-copilot-cli.sh
 
 # Report result
 # If any of the checks above exited with a non-zero exit code, the test will fail.

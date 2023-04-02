@@ -2,8 +2,10 @@
 
 TARGET_PACKAGE="@githubnext/github-copilot-cli"
 TARGET_VERSION=${VERSION:-"latest"}
+INSTALL_HELPER=${HELPER:-"false"}
 
 set -e
+
 
 # https://github.com/Balazs23/devcontainers-features/blob/main/src/nx/install.sh
 command_exists() {
@@ -19,3 +21,8 @@ fi
 
 echo "Installing npm package: ${TARGET_PACKAGE}@${TARGET_VERSION}"
 npm install -g --omit=dev "${TARGET_PACKAGE}@${TARGET_VERSION}"
+
+if test "${INSTALL_HELPER}" = "true"; then
+  echo "Installing helper script: helper-gh-copilot-cli.sh"
+  cp "$(dirname "${0}")/helper-gh-copilot-cli.sh" /usr/local/bin/helper-gh-copilot-cli.sh
+fi
